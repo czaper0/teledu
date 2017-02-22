@@ -1,3 +1,11 @@
+var $footer = $('#footer');
+var $win = $(window);
+$win.on('scroll', function () {
+  var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+  var foot = scrollBottom*0.225;
+  if(scrollBottom<400)$footer.css('transform', 'perspective(500px) rotateX(' + foot + 'deg) translateY(-200px)');
+  else $footer.css('transform', 'perspective(500px) rotateX(-90deg) translateY(-200px)');
+});
 function funkcja1(ident)
 {
   for (i = 0; i < 6; i++)

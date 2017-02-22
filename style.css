@@ -163,7 +163,7 @@ src: local('Tw Cen MT Condensed Extra Bold'), url('TCCEB.woff') format('woff');
   padding: 5%;
   height: auto;
   margin: auto;
-  padding-bottom: 700px;
+  padding-bottom: 800px;
 }
 
 /* KAFELEK */
@@ -604,13 +604,13 @@ Y88b  d88P Y88b. .d88P 888   d88P
 {
   width: 0;
   height: 0;
-  opacity: 0;
+  //opacity: 0;
 }
 .footer_subtriangle
 {
   width: 0;
   height: 0;
-  opacity: 0;
+  //opacity: 0;
 }
 .footer_rectangle
 {
@@ -622,7 +622,7 @@ Y88b  d88P Y88b. .d88P 888   d88P
   background-color: #1a2025;
   min-height: 400px;
   width: 100%;
-  opacity: 0;
+  //opacity: 0;
 }
 .footer_rectangle_text
 {
@@ -634,7 +634,6 @@ Y88b  d88P Y88b. .d88P 888   d88P
   display: inline-block;
   width: 30%;
   min-width: 350px;
-  //background-color: green;
   min-height: 200px;
   color: #8c8585;
 }
@@ -650,27 +649,28 @@ Y88b  d88P Y88b. .d88P 888   d88P
   background-color: #222930;
   min-height: 400px;
   width: 100%;
-  opacity: 0;
+  //opacity: 0;
 }
 .footer-container
 {
   font-size: 18px;
   width: 100%;
-  height: 100px;
-  background-color: #0c0f16;
+  height: 200px;
+  //background-color: #201f28;
   /*color: #8c9098;*/
   color: #c4cbd9;
-  //margin-top: -100px;
+  margin-top: 300px;
   text-align: center;
-  padding-top: 10px;
   font-family: adventpro-extralight;
   float: right;
 }
 .footer
 {
+  padding: 30px;
   width: 100%;
   height: 200%;
-
+  background-color: #15181f;
+  //background-color:rgba(37, 125, 44, 0.53);
 }
 
 /*

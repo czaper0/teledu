@@ -131,13 +131,13 @@
                 <p style="margin-top: 3%; margin-bottom: 4%; color:#241c22;"><b>TELETRANSMISJA</b></p>
             </div></div>
           </div>
-       </div>
-      </div>
+
+
       <div class="footer_subtriangle" style="
         border-left: 0 solid transparent;
         border-right: 98.8vw solid transparent;
         border-bottom: 100px solid #222930;
-        margin-top: -600px;
+        margin-top: -700px;
         ">
       </div>
       <div class="footer_triangle" style="
@@ -173,33 +173,40 @@
         margin-top: -100px;">
       </div>
 
-          <div class="footer-container" style="width: 100%;">
+        <div style="width: 100%; height: 500px;">
 
+          <div class="footer-container" style="width: 100%;">
+            <div id="footer" class="footer">
             *jakiś tekst o tym że strona była tworzona z pasją</br>
             <p3 style="float: right; text-align: left; margin-right: 20px;">
               @created by Kacper Murat & Piotr Paszko</br>
               @graphics created by Kacper Murat & Piotr Paszko</br>
-              support:    <u><i>support@teledu.pl</i></u>
+              support:    <u><i>support@teledu.pl</i></u></br>
+              Kacper
+            </div>
             </p3>
           </div>
+          </div>
     </div>
+  </div>
+  </div>
     <script>
-    $(document).ready(function() {
-      /*  $(window).scroll( function(){
+    var $win = $(window);
+    $win.on('scroll', function () {
             $('.footer_rectangle').each( function(i){
-                var bottom_of_object = $('.footer_rectangle').offset().top + $('.footer_rectangle').outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
-                if( bottom_of_window > bottom_of_object ){
-                    $('.footer_subtriangle').animate({'opacity':'1'},500);
+                var object = $('.footer_rectangle').offset().top + $('.footer_rectangle').outerHeight();
+                var wind = $(window).scrollTop() + $(window).height();
+                if( wind < object ){
+                  $('.footer_subrectangle').css('opacity','1');
+                    /*$('.footer_subtriangle').animate({'opacity':'1'},500);
                     $('.footer_subrectangle').animate({'opacity':'1'},500);
                     $('.footer_rectangle').delay(300).animate({'opacity':'1'},500);
                     $('.footer_triangle').delay(300).animate({'opacity':'1'},500);
-                    $('.footer_rectangle_text').delay(500).showDown('slow');}
+                    $('.footer_rectangle_text').delay(500).showDown('slow');}*/
                 }
             });
-        });*/
-        document.getElementById("footer-container").innerHTML = "Hello World";
-    });
+        });
     </script>
+    <script src="myScript.js"></script>
   </body>
 </html>
