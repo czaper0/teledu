@@ -1,0 +1,6 @@
+[0213/203402.622:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Gunbean\Reports\Dump\settings.dat: Odmowa dost�pu. (0x5)
+[0213/203402.626:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Potok zosta� zako�czony. (0x6D)
+[0213/203402.628:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Gunbean\Reports\Dump\settings.dat: Odmowa dost�pu. (0x5)
+[0214/095621.174:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Gunbean\Reports\Dump\settings.dat: Odmowa dost�pu. (0x5)
+[0214/095621.178:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Potok zosta� zako�czony. (0x6D)
+[0214/095621.180:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Gunbean\Reports\Dump\settings.dat: Odmowa dost�pu. (0x5)

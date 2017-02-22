@@ -1,0 +1,958 @@
+body
+{
+  background-color: #2e2c39;
+	margin: 0 !important;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #1a1725;
+}
+::-moz-selection {
+  background: #1a1725;
+}
+::-webkit-scrollbar {
+    width: 1.2vw;
+    height: 1.2vh;
+}
+::-webkit-scrollbar-button {
+    background: #303046;
+}
+::-webkit-scrollbar-track-piece {
+    background: #272738;
+}
+::-webkit-scrollbar-thumb {
+    background: #20202e;
+}​
+/*
+
+      :::::::::: ::::::::  ::::    ::: ::::::::::: ::::::::
+     :+:       :+:    :+: :+:+:   :+:     :+:    :+:    :+:
+    +:+       +:+    +:+ :+:+:+  +:+     +:+    +:+
+   :#::+::#  +#+    +:+ +#+ +:+ +#+     +#+    +#++:++#++
+  +#+       +#+    +#+ +#+  +#+#+#     +#+           +#+
+ #+#       #+#    #+# #+#   #+#+#     #+#    #+#    #+#
+###        ########  ###    ####     ###     ########
+
+*/
+
+@font-face {
+font-family: 'Tw Cen MT Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Tw Cen MT Condensed'), url('TCCM____.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Tw Cen MT Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Tw Cen MT Bold'), url('TCB_____.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Tw Cen MT Condensed Extra Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Tw Cen MT Condensed Extra Bold'), url('TCCEB.woff') format('woff');
+}
+@font-face {
+  font-family: adventpro-extralight;
+  src: local("adventpro-extralight"),
+       url(adventpro-extralight.ttf);
+}
+
+/*
+
+########################################################################################
+########################################################################################
+########################################################################################
+
+*/
+
+.wrapper
+{
+  width: 100%;
+  height: 100%;
+}
+
+.logo_container
+{
+  width: 100%;
+  height: 130px;
+  background-color: #222930;
+  font-size: 70px;
+  font-family: Tw Cen MT Condensed Extra Bold;
+  text-align: center;
+}
+
+.logo
+{
+  width: 180px;
+  margin-left: 30px;
+  margin-top: 15px;
+  float: left;
+  filter: brightness(80%);
+}
+.logo:hover
+{
+  filter: brightness(120%);
+  cursor: pointer;
+}
+
+.container
+{
+  width: 100%;
+  background-color: #373945;
+}
+
+.content
+{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  background-color: #1D2126;
+}
+
+
+/*
+888b     d888        d8888 8888888 888b    888
+8888b   d8888       d88888   888   8888b   888
+88888b.d88888      d88P888   888   88888b  888
+888Y88888P888     d88P 888   888   888Y88b 888
+888 Y888P 888    d88P  888   888   888 Y88b888
+888  Y8P  888   d88P   888   888   888  Y88888
+888   "   888  d8888888888   888   888   Y8888
+888       888 d88P     888 8888888 888    Y888
+
+
+8888888b.     d8888  .d8888b.  8888888888
+888   Y88b   d88888 d88P  Y88b 888
+888    888  d88P888 888    888 888
+888   d88P d88P 888 888        8888888
+8888888P" d88P  888 888  88888 888
+888      d88P   888 888    888 888
+888     d8888888888 Y88b  d88P 888
+888    d88P     888  "Y8888P88 8888888888
+
+
+
+
+
+
+  ::::::::::: ::::::::::: :::        :::::::::: ::::::::
+     :+:         :+:     :+:        :+:       :+:    :+:
+    +:+         +:+     +:+        +:+       +:+
+   +#+         +#+     +#+        +#++:++#  +#++:++#++
+  +#+         +#+     +#+        +#+              +#+
+ #+#         #+#     #+#        #+#       #+#    #+#
+###     ########### ########## ########## ########
+
+*/
+
+/*POJEMNIK NA KEFELKI*/
+.tile-container
+{
+  width: 100%;
+  padding: 5%;
+  height: auto;
+  margin: auto;
+  padding-bottom: 700px;
+}
+
+/* KAFELEK */
+/*.tile
+{
+   position: relative;
+   width: 100%;
+   padding-top: 100%;
+   display: inline-block;
+   margin-bottom: 2%;
+   vertical-align: bottom;
+   -webkit-box-shadow: inset 0px 1px 0px 8px rgba(0,0,0,0.28);
+   -moz-box-shadow: inset 0px 1px 0px 8px rgba(0,0,0,0.28);
+   box-shadow: inset 0px 1px 0px 8px rgba(0,0,0,0.28);
+}*/
+
+
+.tile
+{
+   position: relative;
+   width: 100%;
+   padding-top: 100%;
+   display: inline-block;
+   margin-bottom: 2%;
+   background-color: #191b1e;
+   vertical-align: bottom;
+   box-shadow: 0 12px 15px 0 rgba(0,0,0,0.18), 0 17px 50px 0 rgba(0,0,0,0.14);
+   cursor: pointer;
+   background: #191b1e;
+ }
+
+/* TYTUŁ KAFELKA */
+.inside-text
+{
+   position:  absolute;
+   top: 030px;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   text-align: center;
+   color: white;
+   font-family: Tw Cen MT Condensed Extra Bold;
+   font-size: 9vw;
+   transition: 1.5s;
+}
+
+/*OPIS KAFELKA*/
+.subtext
+{
+  font-family: adventpro-extralight;
+  font-size: 4.6vw;
+  margin-top: -40px;
+  transition: 1.2s;
+  color: rgba(255, 214, 214, 0);
+  transition-delay: -0.6s;
+}
+.tekst /*div na tekst*/
+{
+/*  margin-top: -20px;*/
+  margin-top: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  /*background-color: rgba(0,0,0,0.28);*/
+}
+
+p.subtext
+{
+  font-family: adventpro-extralight;
+  line-height: 140%;
+}
+
+/* OBRAZEK KAFELKA */
+.image
+{
+  height: 60%;
+  transition: 1.2s;
+}
+
+/* ANIMACJA PO NAJECHANIU NA KAFELEK */
+
+.tile:hover .image
+{
+  height: 30%;
+  transition: 1.2s;
+  margin-bottom: -10px;
+}
+.tile:hover .inside-text
+{
+  font-size: 8vw;
+  transition: 1.2s;
+}
+.tile:hover .subtext
+{
+  transition-delay: 0.7s;
+  color: rgba(255, 255, 255, 255);
+}
+/*
+
+ .d8888b.  888     888 888888b.
+d88P  Y88b 888     888 888  "88b
+Y88b.      888     888 888  .88P
+ "Y888b.   888     888 8888888K.
+    "Y88b. 888     888 888  "Y88b
+      "888 888     888 888    888
+Y88b  d88P Y88b. .d88P 888   d88P
+ "Y8888P"   "Y88888P"  8888888P"
+
+
+8888888b.     d8888  .d8888b.  8888888888
+888   Y88b   d88888 d88P  Y88b 888
+888    888  d88P888 888    888 888
+888   d88P d88P 888 888        8888888
+8888888P" d88P  888 888  88888 888
+888      d88P   888 888    888 888
+888     d8888888888 Y88b  d88P 888
+888    d88P     888  "Y8888P88 8888888888
+
+
+
+
+
+
+
+
+
+
+        :::   :::   :::::::::: ::::    ::: :::    :::
+      :+:+: :+:+:  :+:        :+:+:   :+: :+:    :+:
+    +:+ +:+:+ +:+ +:+        :+:+:+  +:+ +:+    +:+
+   +#+  +:+  +#+ +#++:++#   +#+ +:+ +#+ +#+    +:+
+  +#+       +#+ +#+        +#+  +#+#+# +#+    +#+
+ #+#       #+# #+#        #+#   #+#+# #+#    #+#
+###       ### ########## ###    ####  ########
+
+*/
+
+.triangle
+{
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  margin-top: -20px;
+}
+#subtriangle
+{
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 20px solid rgba(0, 0, 0, 0.18);
+  margin-top: -35px;
+}
+
+.rectangle
+{
+  margin-top: -2px;
+  width: 100%;
+  height: 12%;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.28);
+  border-width: 5px;
+  border-bottom-width: 0;
+  border-top-width: 0;
+  transition: 0.6s;
+  outline: none;
+  text-align: center;
+
+}
+.menu_img_container
+{
+  //background-color: green;
+  text-align: center;
+  height: 70%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  //margin-left: 5%;
+  //float: left;
+  //margin-left: 5%;
+}
+.menu_img
+{
+  margin-top: -15%;
+  max-width: 80%;
+  max-height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu_title
+{
+  margin-top: 20px;
+  margin-left: 15px;
+  font-family: Tw Cen MT Condensed Extra Bold;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.5);
+  transform: rotateZ(270deg);
+}
+
+.title_rectangle
+{
+  width: 100%;
+  height: 15%;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.28);
+  border-width: 5px;
+  border-bottom-width: 0;
+  margin-bottom: -20px;
+  font-family: Tw Cen MT Condensed Extra Bold;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.35);
+  transition: 0.6s;
+  padding-top: 2%;
+}
+
+
+
+.rectangle_long
+{
+  height: 30%;
+  transition: 0.6s;
+    padding-top: 40%;
+}
+
+#subrectangle
+{
+  width: 100%;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+
+}
+#main_rectangle
+{
+
+}
+.menu
+{
+  position: fixed;
+  width: 120px;
+  height: 100%;
+  background-color: #222930;
+  text-align: center;
+  float: left;
+  //display: none;
+}
+
+.logo_container_subpage
+{
+    width: 120px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.28);
+    border-width: 5px;
+    border-bottom-width: 15px;
+}
+.logo_container_subpage:hover .logo_subpage
+{
+  transform: perspective( 600px ) rotateX( 50deg ) rotateY( 6deg );
+  transition: 0.3s;
+}
+.logo_subpage
+{
+  transition: 0.3s;
+    margin: 5px;
+    width: 100px;
+    height: auto;
+    filter: brightness(80%);
+}
+
+  .logo_subpage:hover
+{
+    filter: brightness(120%);
+    cursor: pointer;
+}
+/*
+
+        :::   :::       :::     ::::::::::: ::::    :::
+      :+:+: :+:+:    :+: :+:       :+:     :+:+:   :+:
+    +:+ +:+:+ +:+  +:+   +:+      +:+     :+:+:+  +:+
+   +#+  +:+  +#+ +#++:++#++:     +#+     +#+ +:+ +#+
+  +#+       +#+ +#+     +#+     +#+     +#+  +#+#+#
+ #+#       #+# #+#     #+#     #+#     #+#   #+#+#
+###       ### ###     ### ########### ###    ####
+
+*/
+.main
+{
+  padding: 0;
+  //position: absolute;
+  margin: auto;
+  margin-left: 9.7vw;
+  background-color: transparent;
+  text-align: justify;
+  color: #8c8585;
+  width: calc(100% - 120px);
+  float: right;
+}
+/*
+
+      :::::::::      :::     ::::    ::: ::::    ::: :::::::::: :::::::::
+     :+:    :+:   :+: :+:   :+:+:   :+: :+:+:   :+: :+:        :+:    :+:
+    +:+    +:+  +:+   +:+  :+:+:+  +:+ :+:+:+  +:+ +:+        +:+    +:+
+   +#++:++#+  +#++:++#++: +#+ +:+ +#+ +#+ +:+ +#+ +#++:++#   +#++:++#:
+  +#+    +#+ +#+     +#+ +#+  +#+#+# +#+  +#+#+# +#+        +#+    +#+
+ #+#    #+# #+#     #+# #+#   #+#+# #+#   #+#+# #+#        #+#    #+#
+#########  ###     ### ###    #### ###    #### ########## ###    ###
+
+*/
+.main_banner
+{
+  width:100%;
+  height: 220px;
+  text-align: center;
+  background-color: #12121a;
+  width: calc(100% - 120px);
+  float: right;
+}
+#myCanvas_R
+{
+  width: 400px;
+  height: 220px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 140px);
+}
+#banner_img
+{
+  position: absolute;
+  left: calc(50% - 5px);
+  top: 45px;
+  width: 130px;
+}
+/*
+
+      ::::::::  :::    :::  ::::::::   ::::::::   ::::::::  ::::::::::
+    :+:    :+: :+:    :+: :+:    :+: :+:    :+: :+:    :+: :+:
+   +:+        +:+    +:+ +:+    +:+ +:+    +:+ +:+        +:+
+  +#+        +#++:++#++ +#+    +:+ +#+    +:+ +#++:++#++ +#++:++#
+ +#+        +#+    +#+ +#+    +#+ +#+    +#+        +#+ +#+
+#+#    #+# #+#    #+# #+#    #+# #+#    #+# #+#    #+# #+#
+########  ###    ###  ########   ########   ########  ##########
+
+*/
+
+.choose_option
+{
+  padding: 2%;
+  display: inline-block;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: 0.6;
+}
+
+.choose_option_on
+{
+  background-color: #201f28;
+  width: 40%;
+  transition: 0.6s;
+}
+.choose_option_off
+{
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 30%;
+  transition: 0.6s;
+}
+
+.main_choose
+{
+  //font-family: Tw Cen MT Condensed Extra Bold;
+  //font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background-color: #201f28;
+  display: block;
+  text-align: center;
+  display: block;
+}
+
+.main_choose_display
+{
+  display: none;
+}
+
+/*
+
+      ::::::::   ::::::::  ::::    ::: ::::::::::: :::::::::: ::::    ::: :::::::::::
+    :+:    :+: :+:    :+: :+:+:   :+:     :+:     :+:        :+:+:   :+:     :+:
+   +:+        +:+    +:+ :+:+:+  +:+     +:+     +:+        :+:+:+  +:+     +:+
+  +#+        +#+    +:+ +#+ +:+ +#+     +#+     +#++:++#   +#+ +:+ +#+     +#+
+ +#+        +#+    +#+ +#+  +#+#+#     +#+     +#+        +#+  +#+#+#     +#+
+#+#    #+# #+#    #+# #+#   #+#+#     #+#     #+#        #+#   #+#+#     #+#
+########   ########  ###    ####     ###     ########## ###    ####     ###
+
+*/
+.main_content
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 5%;
+  background-color: #201f28;
+  display: block;
+  text-align: justify;
+  color: red;
+}
+.main_content h1,h2
+{
+  font-family: Tw Cen MT Condensed Extra Bold;
+}
+.main_content_display
+{
+  display: none;
+}
+.main_content_wrapper
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background-color: #201f28;
+  display: block;
+}
+
+/*
+
+      :::::::::: ::::::::   :::::::: ::::::::::: :::::::::: :::::::::
+     :+:       :+:    :+: :+:    :+:    :+:     :+:        :+:    :+:
+    +:+       +:+    +:+ +:+    +:+    +:+     +:+        +:+    +:+
+   :#::+::#  +#+    +:+ +#+    +:+    +#+     +#++:++#   +#++:++#:
+  +#+       +#+    +#+ +#+    +#+    +#+     +#+        +#+    +#+
+ #+#       #+#    #+# #+#    #+#    #+#     #+#        #+#    #+#
+###        ########   ########     ###     ########## ###    ###
+
+*/
+.footer_triangle
+{
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.footer_subtriangle
+{
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.footer_rectangle
+{
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #1a2025;
+  min-height: 400px;
+  width: 100%;
+  opacity: 0;
+}
+.footer_rectangle_text
+{
+  padding: 3%;
+  padding-top: 0;
+  font-size: 20px;
+  font-family: adventpro-extralight;
+  text-align: justify;
+  display: inline-block;
+  width: 30%;
+  min-width: 350px;
+  //background-color: green;
+  min-height: 200px;
+  color: #8c8585;
+}
+.footer_rectangle_text h1
+{
+  color: #736b6b;
+  font-size: 30px;
+  text-align: center;
+  font-family: Tw Cen MT Bold;
+}
+.footer_subrectangle
+{
+  background-color: #222930;
+  min-height: 400px;
+  width: 100%;
+  opacity: 0;
+}
+.footer-container
+{
+  font-size: 18px;
+  width: 100%;
+  height: 100px;
+  background-color: #0c0f16;
+  /*color: #8c9098;*/
+  color: #c4cbd9;
+  //margin-top: -100px;
+  text-align: center;
+  padding-top: 10px;
+  font-family: adventpro-extralight;
+  float: right;
+}
+.footer
+{
+  width: 100%;
+  height: 200%;
+
+}
+
+/*
+
+8888888b. 8888888 8888888888 8888888888 8888888888 8888888b.  8888888888 888b    888 88888888888
+888  "Y88b  888   888        888        888        888   Y88b 888        8888b   888     888
+888    888  888   888        888        888        888    888 888        88888b  888     888
+888    888  888   8888888    8888888    8888888    888   d88P 8888888    888Y88b 888     888
+888    888  888   888        888        888        8888888P"  888        888 Y88b888     888
+888    888  888   888        888        888        888 T88b   888        888  Y88888     888
+888  .d88P  888   888        888        888        888  T88b  888        888   Y8888     888
+8888888P" 8888888 888        888        8888888888 888   T88b 8888888888 888    Y888     888
+
+
+ .d8888b.   .d8888b.  8888888b.  8888888888 8888888888 888b    888  .d8888b.
+d88P  Y88b d88P  Y88b 888   Y88b 888        888        8888b   888 d88P  Y88b
+Y88b.      888    888 888    888 888        888        88888b  888 Y88b.
+ "Y888b.   888        888   d88P 8888888    8888888    888Y88b 888  "Y888b.
+    "Y88b. 888        8888888P"  888        888        888 Y88b888     "Y88b.
+      "888 888    888 888 T88b   888        888        888  Y88888       "888
+Y88b  d88P Y88b  d88P 888  T88b  888        888        888   Y8888 Y88b  d88P
+ "Y8888P"   "Y8888P"  888   T88b 8888888888 8888888888 888    Y888  "Y8888P"
+
+ */
+@media only screen and (min-width: 740px)
+{
+  #myCanvas_R
+  {
+    width: 600px;
+    height: 220px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 240px);
+  }
+  #banner_img
+  {
+    position: absolute;
+    left: calc(50% - 25px);
+    top: 20px;
+    width: 170px;
+  }
+  .inside-text
+  {
+     font-size: 4vw;
+  }
+
+  .inside-text:hover
+  {
+    font-size: 2.5vw;
+  }
+
+  .tile-container
+  {
+    width: 100%;
+    height: auto;
+  }
+
+  .tile
+  {
+    width: 48%;
+    padding-top: 48%;
+    font-size: 15px ;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    position: relative;
+
+  }
+
+  .subtext
+  {
+    font-size: 2.3vw;
+  }
+
+  .tile:hover .image
+  {
+    height: 30%;
+    margin-bottom: -10px;
+  }
+
+  .tile:hover .inside-text
+  {
+    font-size: 2.5vw;
+  }
+
+}
+@media only screen and (min-width: 960px)
+{
+  #myCanvas_R
+  {
+    width: 800px;
+    height: 220px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 340px);
+  }
+  #banner_img
+  {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 10px;
+    width: auto;
+  }
+}
+@media only screen and (min-width:1170px)
+{
+  #myCanvas_R
+  {
+    width: 1000px;
+    height: 220px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 450px);
+  }
+  .inside-text
+  {
+     font-size: 2.7vw;
+  }
+
+  .inside-text:hover
+  {
+    font-size: 2vw;
+  }
+
+  .tile-container
+  {
+    width: 95%;
+    height: auto;
+  }
+
+  .tile
+  {
+    width: 32%;
+    padding-top: 32%;
+    font-size: 15px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    position: relative;
+  }
+  .subtext
+  {
+    font-size: 1.4vw;
+  }
+  .tile:hover .image
+  {
+    height: 30%;
+    margin-bottom: -10px;
+  }
+  .tile:hover .inside-text
+  {
+    font-size: 2.2vw;
+  }
+}
+@media only screen and (min-width: 1380px)
+{
+  .tile-container
+  {
+    width: 80%;
+    height: auto;
+  }
+
+  .tile
+  {
+    width: 32%;
+    padding-top: 32%;
+    font-size: 14px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    position: relative;
+  }
+
+  tile:hover .image
+  {
+    height: 30%;
+    margin-bottom: -10px;
+  }
+
+  .tile:hover .inside-text
+  {
+    font-size: 2.1vw;
+  }
+
+  .inside-text
+  {
+     font-size: 2.3vw;
+  }
+
+  .subtext
+  {
+    font-size: 1.1vw;
+  }
+}
+/*
+
+888       888  .d88888b.  8888888b.  888    d8P   .d8888b.  8888888b.     d8888  .d8888b.  8888888888
+888   o   888 d88P" "Y88b 888   Y88b 888   d8P   d88P  Y88b 888   Y88b   d88888 d88P  Y88b 888
+888  d8b  888 888     888 888    888 888  d8P    Y88b.      888    888  d88P888 888    888 888
+888 d888b 888 888     888 888   d88P 888d88K      "Y888b.   888   d88P d88P 888 888        8888888
+888d88888b888 888     888 8888888P"  8888888b        "Y88b. 8888888P" d88P  888 888        888
+88888P Y88888 888     888 888 T88b   888  Y88b         "888 888      d88P   888 888    888 888
+8888P   Y8888 Y88b. .d88P 888  T88b  888   Y88b  Y88b  d88P 888     d8888888888 Y88b  d88P 888
+888P     Y888  "Y88888P"  888   T88b 888    Y88b  "Y8888P"  888    d88P     888  "Y8888P"  8888888888
+
+*/
+/*.nav
+{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	float: left;
+}
+
+.sticky
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    margin-left: 200px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.button
+{
+  width: 250px;
+  color: white;
+  padding: 11px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 2px 2px;
+  cursor: pointer;
+  float:right;
+  border-radius: 2px;
+}
+*/

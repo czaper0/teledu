@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+    <meta charset="utf-8">
+    <title>TELEDU Uklady cyfrowe</title>
+    <link rel="icon" type="image/png" href="img/logo_icon.png">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="fontello/css/menu.css" rel="stylesheet" type="text/css"/>
+
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script src="myScript.js"></script>
+    <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#222930">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#222930">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#222930">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+
+  </head>
+  <body onload="funkcja1('01'); choose_menu('1')">
+    <div class="wrapper">
+
+<!--
+
+        :::   :::   :::::::::: ::::    ::: :::    :::
+      :+:+: :+:+:  :+:        :+:+:   :+: :+:    :+:
+    +:+ +:+:+ +:+ +:+        :+:+:+  +:+ +:+    +:+
+   +#+  +:+  +#+ +#++:++#   +#+ +:+ +#+ +#+    +:+
+  +#+       +#+ +#+        +#+  +#+#+# +#+    +#+
+ #+#       #+# #+#        #+#   #+#+# #+#    #+#
+###       ### ########## ###    ####  ########
+
+-->
+
+      <div class="menu">
+        <div class="logo_container_subpage">
+          <a href="index.php"><img class="logo_subpage" src="img/logo2.png"></a>
+        </div>
+        <span id="0" onclick="funkcja1('01'); choose_menu('1')">
+                <div class="title_rectangle" id="01" style="background-color: #df2f00;">UKŁADY CYFROWE
+                </div>
+                  <img id="img_01" class="menu_img"/>
+                <span id="title_01" class="menu_title"></span>
+                <div id="subtriangle" style="margin-top: -53px;"></div>
+                <div id="subrectangle"></div>
+        </span>
+
+        <span id="1" onclick="funkcja1(11); choose_menu('1'); update_content('UEC', '1')">
+                <div class="triangle" style="border-bottom: 20px solid #e3b307;"></div>
+                <div class="rectangle" id="11" style="background-color: #e3b307;" tabindex="0">
+                  <div class="menu_img_container">
+                    <img id="img_11" class="menu_img" src="img/UEC_binary.png" />
+                    <span id="title_11" class="menu_title" >SYSTEMY LICZBOWE</span>
+                  </div>
+                </div>
+                <div id="subtriangle"></div>
+                <div id="subrectangle"></div>
+        </span>
+
+
+        <span id="2"  onclick="funkcja1(21); choose_menu('1')">
+                <div class="triangle" style="border-bottom: 20px solid #cbe215" ></div>
+                <div class="rectangle" id="21" style="background-color: #cbe215" tabindex="0">
+                  <div class="menu_img_container">
+                    <img id="img_21" class="menu_img" src="img/UEC_gate.png" />
+                    <span id="title_21" class="menu_title">UKŁADY KOMBINACYJNE</span>
+                  </div>
+                </div>
+                <div id="subtriangle"></div>
+                <div id="subrectangle"></div>
+        </span>
+
+        <span id="3" onclick="funkcja1(31); choose_menu('1')">
+                <div class="triangle" style="border-bottom: 20px solid #399e16"></div>
+                <div class="rectangle" id="31" style="background-color: #399e16" tabindex="0">
+                  <div class="menu_img_container">
+                   <img id="img_31" class="menu_img" src="img/UEC_przerzutnik.png" />
+
+        <span id="title_31" class="menu_title">PRZERZUTNIKI</span>         </div>
+                </div>
+                <div id="subtriangle"></div>
+                <div id="subrectangle"></div>
+        </span>
+
+        <span id="4" onclick="funkcja1(41); choose_menu('1')">
+                <div class="triangle" style="border-bottom: 20px solid #4474d0"></div>
+                <div class="rectangle" id="41" style="background-color: #4474d0" tabindex="0">
+                  <div class="menu_img_container">
+                   <img id="img_41" class="menu_img" src="img/UEC_wave.png" />
+
+         <span id="title_41" class="menu_title">UKŁADY SEKWENCYJNE</span>         </div>
+                </div>
+                <div id="subtriangle"></div>
+                <div id="subrectangle"></div>
+        </span>
+
+        <span id="5" onclick="funkcja1(51); choose_menu('1')">
+                <div class="triangle" style="border-bottom: 20px solid #1c3970;"></div>
+                <div class="rectangle" id="51" style="background-color: #1c3970;" tabindex="0">
+                  <div class="menu_img_container">
+                   <img id="img_51" class="menu_img" src="img/UEC_mutli.png" />
+
+           <span id="title_51" class="menu_title">MULTIPLEKSERY</span>       </div>
+                </div>
+                <div id="subtriangle"></div>
+                <div id="subrectangle"></div>
+        </span>
+
+                <div class="triangle" style="border-bottom: 20px solid #1b2126;"></div>
+                <div class="rectangle" style="background-color: #1b2126;" tabindex="0" >
+                </div>
+        <!--
+        <div class="triangle" style="border-bottom: 20px solid #c87137;"></div>
+        <div class="rectangle" style="background-color: #c87137;">
+        </div>
+        <div id="subtriangle"></div>
+        <div id="subrectangle"></div>
+
+        <div class="triangle" style="border-bottom: 20px solid #ac9d93;"></div>
+        <div class="rectangle" style="background-color: #ac9d93;">
+        </div>
+        <div id="subtriangle"></div>
+        <div id="subrectangle"></div>
+
+        <div class="triangle" style="border-bottom: 20px solid #6c5367;"></div>
+        <div class="rectangle" style="background-color: #6c5367;">rgb(0,28, 83, 103)
+        </div>
+        <div id="subtriangle"></div>
+        <div id="subrectangle"></div>-->
+      </div>
+
+      <!--
+
+      :::::::::      :::     ::::    ::: ::::    ::: :::::::::: :::::::::
+     :+:    :+:   :+: :+:   :+:+:   :+: :+:+:   :+: :+:        :+:    :+:
+    +:+    +:+  +:+   +:+  :+:+:+  +:+ :+:+:+  +:+ +:+        +:+    +:+
+   +#++:++#+  +#++:++#++: +#+ +:+ +#+ +#+ +:+ +#+ +#++:++#   +#++:++#:
+  +#+    +#+ +#+     +#+ +#+  +#+#+# +#+  +#+#+# +#+        +#+    +#+
+ #+#    #+# #+#     #+# #+#   #+#+# #+#   #+#+# #+#        #+#    #+#
+#########  ###     ### ###    #### ###    #### ########## ###    ###
+
+
+      -->
+
+      <div class="main_banner">
+
+<canvas id="myCanvas_R" width="1800" height="220"> </canvas>
+    <script>
+            var canvas = document.getElementById('myCanvas_R');
+            var context = canvas.getContext('2d');
+
+            // begin custom shape
+            context.beginPath();
+            context.moveTo(0, 220);
+            context.lineTo(80*1.8, 120);
+            context.lineTo(120*1.8,120);
+            context.lineTo(70*1.8,180);
+            context.lineTo(110*1.8,180);
+            context.lineTo(190*1.8,80);
+            context.lineTo(230*1.8,80);
+            context.lineTo(180*1.8,140);
+            context.lineTo(220*1.8,140);
+            context.lineTo(300*1.8,40);
+            context.lineTo(340*1.8,40);
+            context.lineTo(290*1.8,100);
+            context.lineTo(330*1.8,100);
+
+            context.lineTo(400*1.8,0);
+            context.lineTo(1000*1.8,0);
+
+            context.lineTo(920*1.8,100);
+            context.lineTo(880*1.8,100);
+            context.lineTo(930*1.8,40);
+            context.lineTo(890*1.8,40);
+            context.lineTo(810*1.8,140);
+            context.lineTo(770*1.8,140);
+            context.lineTo(820*1.8,80);
+            context.lineTo(780*1.8,80);
+
+            context.lineTo(700*1.8,180);
+            context.lineTo(660*1.8,180);
+            context.lineTo(710*1.8,120);
+            context.lineTo(670*1.8,120);
+
+
+            context.lineTo(600*1.8,220);
+
+            // complete custom shape
+            context.closePath();
+            context.fillStyle = '#201f28';
+            context.fill();
+    </script>
+    <img src="img/logo_banner.png" id="banner_img">
+        <!--  <i class="demo-icon icon-th-list" style="float: right; font-size: 50px; margin-right: 50px; margin-top: 80px;"></i>
+        </div>
+          <div class="nav">
+            <ul>
+              <li><a href="#home">Wielka kupa gówna</a></li>
+              <li><a href="#news">News</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </li>
+            </ul>-->
+          </div>
+
+<!--
+
+      ::::::::  :::    :::  ::::::::   ::::::::   ::::::::  ::::::::::
+    :+:    :+: :+:    :+: :+:    :+: :+:    :+: :+:    :+: :+:
+   +:+        +:+    +:+ +:+    +:+ +:+    +:+ +:+        +:+
+  +#+        +#++:++#++ +#+    +:+ +#+    +:+ +#++:++#++ +#++:++#
+ +#+        +#+    +#+ +#+    +#+ +#+    +#+        +#+ +#+
+#+#    #+# #+#    #+# #+#    #+# #+#    #+# #+#    #+# #+#
+########  ###    ###  ########   ########   ########  ##########
+
+-->
+      <div class="main">
+
+        <div class="main_choose">
+          <div class="choose_option" id="choose_option_1" onclick="choose_menu('1')">PRZECZYTAJ</div><!--
+          --><div class="choose_option" id="choose_option_2" onclick="choose_menu('2')">OBEJRZYJ  FILM</div><!--
+          --><div class="choose_option" id="choose_option_3" onclick="choose_menu('3')">POBIERZ  PDF</div>
+        </div>
+
+<!--
+
+      ::::::::   ::::::::  ::::    ::: ::::::::::: :::::::::: ::::    ::: :::::::::::
+    :+:    :+: :+:    :+: :+:+:   :+:     :+:     :+:        :+:+:   :+:     :+:
+   +:+        +:+    +:+ :+:+:+  +:+     +:+     +:+        :+:+:+  +:+     +:+
+  +#+        +#+    +:+ +#+ +:+ +#+     +#+     +#++:++#   +#+ +:+ +#+     +#+
+ +#+        +#+    +#+ +#+  +#+#+#     +#+     +#+        +#+  +#+#+#     +#+
+#+#    #+# #+#    #+# #+#   #+#+#     #+#     #+#        #+#   #+#+#     #+#
+########   ########  ###    ####     ###     ########## ###    ####     ###
+
+-->
+
+
+        <div class="main_content_wrapper">
+            <div id="UEC1">
+
+            </div>
+        </div>
+
+
+
+        <div class="main_content_wrapper">
+        <div class="main_content" id="content_11">
+
+          <h1 style="color: #736b6b">MULTIPLEKSER I DEMULTI</h1>
+          <h2 color="#736b6b">DEFINICJA</h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra gravida lectus in laoreet. Nulla vitae arcu et sem malesuada suscipit. Vestibulum varius elit sit amet urna convallis, a mattis lectus fermentum. Curabitur urna mi, tempus ut velit non, pellentesque sollicitudin augue. Quisque in leo vitae libero pretium porta eu sed libero. Sed diam dolor, lacinia eget suscipit a, vestibulum sit amet lacus. Maecenas egestas non leo et efficitur. Pellentesque rhoncus tellus justo, commodo vestibulum nunc pharetra ut. Nunc vulputate consectetur odio vel semper. Duis urna nulla, viverra ac faucibus ut, interdum vitae nulla. Donec orci massa, aliquet vel quam at, facilisis venenatis turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</br></br>
+          Aliquam sed tincidunt lorem. Mauris ut aliquet odio. In fringilla urna ac ligula pretium ultrices. Maecenas nec purus ex. Duis aliquet faucibus urna, eu gravida orci rutrum laoreet. Integer sagittis volutpat sodales. Sed molestie tellus quis felis hendrerit lacinia. Proin sollicitudin mi ac neque sagittis sagittis. Maecenas ut leo sit amet neque dignissim ultrices. Suspendisse pulvinar tempus dapibus. Sed in sollicitudin nunc, eu aliquet enim. Integer pretium sit amet elit vel rutrum. Vestibulum vitae lectus dictum, congue orci eget, tempus nisi. Ut vitae enim quam. Duis eu felis ut lacus sollicitudin mollis.</br></br>
+          <h2 color="#736b6b">ZASADA DZIAŁANIA</h2>
+          Aenean interdum leo ac dignissim commodo. In rutrum nec ex a rhoncus. Donec semper ligula ut metus ullamcorper, at luctus tortor euismod. Duis condimentum augue nunc, malesuada vestibulum libero semper id. Nullam condimentum dui vitae nulla pellentesque faucibus. Donec lectus orci, posuere sit amet diam sit amet, lacinia tincidunt justo. Proin lacinia, nunc non dictum scelerisque, mi ante consectetur tellus, pulvinar pulvinar purus turpis quis sem.</br></br>
+          Sed sed tortor massa. Fusce consequat scelerisque velit, at lacinia nisl aliquet ut. Nunc eget leo vehicula, volutpat ipsum sed, tempus odio. Aenean efficitur arcu ipsum, ac pretium turpis pulvinar vitae. Donec interdum sagittis laoreet. Donec sagittis tincidunt dolor, at hendrerit neque. Nam dapibus elit nibh, non bibendum ligula euismod quis. Aliquam elementum id magna et condimentum. Phasellus ut massa metus. In et elit nec massa congue tempor. Ut at neque at turpis pellentesque facilisis a et tortor. Ut condimentum blandit quam ac aliquam. Proin tempus, nunc in ultrices ultrices, nisl ipsum ultricies neque, vehicula dictum purus elit id eros.</br></br>
+          <h2 color="#736b6b">PROJEKTOWANIE UKŁADÓW Z MULTIPLEKSEREM I DEMULTIPLEKSEREM</h2>
+          Cras a mi odio. Ut ac risus non orci cursus tincidunt quis id sem. Morbi consectetur porta massa, vitae imperdiet nisl luctus ut. Nullam condimentum, nulla a accumsan aliquet, felis purus pellentesque odio, ac fermentum nulla lacus nec justo. Pellentesque risus orci, accumsan a lorem maximus, laoreet bibendum tellus. Morbi tristique nisl sed metus efficitur, at iaculis ipsum venenatis. Aenean arcu sem, accumsan quis mattis in, finibus vel ipsum.
+                </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+       </div>
+     </div>
+
+       <div class="main_content_wrapper">
+       <div class="main_content" id="content_21">
+
+<h1 style="color: #736b6b">PRZERZUTNIKI</h1>
+<h2 color="#736b6b">DEFINICJA</h2>
+Suspendisse potenti. Sed lectus mi, posuere eu magna id, porta ullamcorper nulla. Donec aliquet eget nisi ut sodales. Fusce quis metus lectus. Praesent vestibulum sodales enim vitae pulvinar. Ut lorem erat, posuere ac faucibus eget, ullamcorper nec velit. Ut purus nulla, iaculis sed finibus id, auctor in leo. Maecenas varius nisl et nulla fermentum condimentum. Maecenas tempor eleifend mollis. Sed tincidunt, enim id aliquam efficitur, nunc purus ornare risus, sit amet porta mauris mauris eget odio. Vestibulum in leo porta lacus auctor pharetra at id erat. Praesent tempus enim sed quam viverra, vitae convallis urna condimentum. Cras mauris magna, cursus eget efficitur non, volutpat sit amet lectus. Phasellus sollicitudin dapibus tortor, at vulputate quam finibus in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</br></br>
+Vestibulum lacinia eu lorem vitae volutpat. Praesent dignissim augue vitae aliquet bibendum. Integer non lacus dolor. Donec malesuada erat id ligula consectetur ullamcorper. Quisque maximus et nisl sollicitudin aliquet. Cras nec dui a orci blandit pellentesque id vel ex. Suspendisse sodales pulvinar fermentum. Fusce efficitur augue vel felis molestie consectetur. Nulla facilisi. Vestibulum ac iaculis lacus, eget facilisis orci. Proin sit amet accumsan magna. Curabitur porttitor faucibus tortor, id facilisis ipsum bibendum quis. Pellentesque leo tortor, finibus ultricies faucibus sit amet, volutpat tristique sem. Donec mollis consectetur leo, in consequat nisl iaculis et.</br></br>
+Proin auctor iaculis convallis. Duis molestie, magna vel consectetur blandit, nisl turpis volutpat odio, nec condimentum metus risus eu elit. Donec luctus efficitur ipsum sit amet feugiat. Proin ut tristique eros. Aliquam imperdiet mattis metus et commodo. Phasellus sit amet laoreet nisl. Vestibulum vel enim dolor. Aliquam egestas accumsan magna, eget suscipit nibh blandit non. Pellentesque massa ex, rhoncus quis est non, pretium dignissim eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean ullamcorper tristique sem a viverra. Nulla facilisi. Aliquam nec pharetra eros, et egestas lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum sollicitudin nisl vitae nisi ultricies, vitae vulputate ante sagittis.</br></br>
+<h2 color="#736b6b">ZASADA DZIAŁANIA</h2>
+Vestibulum vitae libero augue. Proin sed libero vel urna volutpat suscipit ut varius felis. Phasellus ac lacus sit amet diam bibendum suscipit vitae sed justo. Proin sodales pretium ligula, vel vulputate urna consequat et. Pellentesque eget turpis pellentesque, iaculis justo in, gravida velit. Mauris gravida ac quam sit amet dapibus. Donec dui turpis, mollis sit amet lacus ut, dignissim bibendum arcu. Cras eget sapien venenatis, dignissim velit sit amet, congue leo. Suspendisse congue tincidunt sem vel blandit. Nunc hendrerit diam lectus, at maximus dui consectetur vel. Nulla ac tortor sed quam rutrum sagittis id nec ante. Aliquam dapibus auctor diam. Sed eleifend, nisl sit amet porta cursus, eros magna dignissim neque, sit amet varius lorem ipsum sed lorem. Duis molestie neque id est commodo luctus. Phasellus elementum arcu et posuere laoreet. Integer aliquet velit enim, vitae efficitur sem viverra nec.</br></br>
+<h2 color="#736b6b">PROJEKTOWANIE UKŁADÓW Z PRZERZUTNIKAMI</h2>
+Pellentesque eget lectus lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean luctus pharetra magna, ut iaculis metus congue et. Nullam congue, lectus nec interdum aliquam, tellus mauris dictum elit, sed eleifend arcu arcu sit amet ante. Vestibulum pellentesque ac diam et ultricies. Nulla iaculis augue ut tellus pretium rhoncus. Maecenas ornare hendrerit erat, ac rutrum eros cursus vel. Nullam dolor nulla, consequat sit amet sapien vel, scelerisque feugiat mi. Proin magna ex, dignissim porta eros eu, euismod scelerisque urna. Mauris cursus sapien ac orci accumsan vehicula. Donec lorem libero, tempor non bibendum eu, pulvinar malesuada enim. Vestibulum a consequat est, et commodo nisl. Fusce non metus vel dui vulputate blandit. Ut laoreet nunc justo, et blandit lacus faucibus id. Sed condimentum magna a dolor elementum sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</br></br>
+  </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+      </div>
+      </div>
+
+      <div class="main_content_wrapper">
+      <div class="main_content" id="content_31" style="text-align: center; padding: 10%;">
+      <img src="img/coming_soon.png" width="80%"></br></br></br></br></br></br></br></br></br></br></br></br></br></br></div>
+      </div>
+
+      <div class="main_content_wrapper">
+      <div class="main_content" id="content_41" style="text-align: center; padding: 10%;">
+      <img src="img/coming_soon.png" width="80%"></br></br></br></br></br></br></br></br></br></br></br></br></br></br></div>
+      </div>
+
+      <div class="main_content_wrapper">
+      <div class="main_content" id="content_51" style="text-align: center; padding: 10%;">
+      <img src="img/coming_soon.png" width="80%"></br></br></br></br></br></br></br></br></br></br></br></br></br></br></div>
+      </div>
+
+    </div>
+
+<!--
+
+      :::::::::: ::::::::   :::::::: ::::::::::: :::::::::: :::::::::
+     :+:       :+:    :+: :+:    :+:    :+:     :+:        :+:    :+:
+    +:+       +:+    +:+ +:+    +:+    +:+     +:+        +:+    +:+
+   :#::+::#  +#+    +:+ +#+    +:+    +#+     +#++:++#   +#++:++#:
+  +#+       +#+    +#+ +#+    +#+    +#+     +#+        +#+    +#+
+ #+#       #+#    #+# #+#    #+#    #+#     #+#        #+#    #+#
+###        ########   ########     ###     ########## ###    ###
+
+-->
+
+    <div class="footer-container">
+      *jakiś tekst o tym że strona była tworzona z pasją</br>
+      <p3 style="float: right; text-align: left; margin-right: 20px;">
+        @created by Kacper Murat & Piotr Paszko</br>
+        @graphics created by Kacper Murat & Piotr Paszko</br>
+        support:    <u><i>support@teledu.pl</i></u>
+      </p3>
+    </div>
+<script type="text/javascript">
+/*  $(document).ready(function() {
+      $(window).scroll( function(){
+          $('.footer_rectangle').each( function(i){
+              var bottom_of_object = $('.footer_rectangle').offset().top + $('.footer_rectangle').outerHeight();
+              var bottom_of_window = $(window).scrollTop() + $(window).height();
+              if( bottom_of_window > bottom_of_object ){
+                  $('.footer_subtriangle').animate({'opacity':'1'},500);
+                  $('.footer_subrectangle').animate({'opacity':'1'},500);
+                  $('.footer_rectangle').delay(300).animate({'opacity':'1'},500);
+                  $('.footer_triangle').delay(300).animate({'opacity':'1'},500);
+                  $('.footer_rectangle_text').delay(500).showDown('slow');}
+              }
+          });
+      });
+      document.getElementById("choose_option").innerHTML = "Hello World";
+  });*/
+</script>
+
+<script>
+    $(document).ready(function() {
+       var stickyNavTop = $('.nav').offset().top;
+
+       var stickyNav = function(){
+       var scrollTop = $(window).scrollTop();
+
+       if (scrollTop > stickyNavTop) {
+          $('.nav').addClass('sticky');
+       } else {
+          $('.nav').removeClass('sticky');
+        }
+       };
+
+       stickyNav();
+
+       $(window).scroll(function() {
+          stickyNav();
+       });
+       });
+
+    </script>
+
+  </body>
+</html>
