@@ -23,7 +23,7 @@ function funkcja1(ident)
     //document.getElementById("img_"+ident).style.display="none";
     document.getElementById("img_"+ident).style.float="left";
   $("#"+ident).addClass("rectangle_long");
-/*  $("#content_"+ident).removeClass("main_content_display").fadeIn(600);*/
+$("#content_"+ident).removeClass("main_content_display").fadeIn(600);
   if(ident=='01') $("main_choose").addClass("main_choose_display");
   else $("main_choose").removeClass("main_choose_display");
 }
@@ -39,10 +39,10 @@ function choose_menu(iden)
 
 }
 
-function update_content(section, ident)
+function update_content(ident)
 {
-    $("#"+section+ident).load("content/" + section + "/" + ident + ".html");
-    $('#UEC1').load("content/UEC/1.html");
+    $("#content_box").load("content/UEC/" + ident + ".html");
+    //$('#UEC1').load("content/UEC/1.html");
 }
 
 /*$(document).ready(function() {
