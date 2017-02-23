@@ -23,20 +23,6 @@
     <div class="wrapper">
       <div class="logo_container">
           <img class="logo" src="img/logo2.png">
-<!--
-          <form action="zaloguj.php" method="post">
-           <p>Login:</p>
-           <br/>
-           <input type="text" placeholder="Enter Username" class="my_input" name="login">
-           <br/><br/>
-           <p>Hasło:</p>
-           <br/>
-           <input type="password" placeholder="Enter Password" class="my_input" name="haslo">
-           <br/><br/>
-           <input type="submit" value="zaloguj się" class="button">
-         </form>
--->
-
         </div>
       <div class="container">
         <div class="content">
@@ -173,47 +159,48 @@
         margin-top: -100px;">
       </div>
 
-        <div style="width: 100%; height: 500px;">
+      <div style="width: 100%; height: 500px;">
 
-          <div class="footer-container" style="width: 100%;">
-            <div id="footer" class="footer">
-              <div class="footer_text">
-                <b>TELEDU</b>
-                <hr>
-                <a>Strona główna</a></br>
-                <a>Nowości</a></br>
-                <a>Newsletter</a></br>
-                <a>Forum</a></br>
-              </div>
-              <div class="footer_text">
-                <b>O NAS</b>
-                <hr>
-                O nas</br>
-                Kontakt</br>
-                Centrum pomocy</br>
-                Współpraca</br>
-                </br>
-              </div>
-              <div class="footer_text">
-                <b>TWOJE KONTO</b>
-                <hr>
-                Logowanie</br>
-                Rejestracja</br>
-                Konto</br>
-              </div>
-              <div class="footer_text">
-                <b>WAŻNE SPRAWY</b>
-                <hr>
-                FAQ</br>
-                Regulamin</br>
-                Polityka prywatności</br>
-              </div></br>
-              <div class="footer_copyright">
-                  <p>teledu.pl &copy; Created by Kacper Murat & Peter Paszko <!--<?php echo date("Y"); ?>-->2017. All Rights Reserved<p>
-              </div>
+        <div class="footer-container" style="width: 100%;">
+          <div id="footer" class="footer">
+            <div class="footer_text">
+              <b>TELEDU</b>
+              <hr>
+              Strona główna</br>
+              Nowości</br>
+              Newsletter</br>
+              Forum</br>
+            </div>
+            <div class="footer_text">
+              <b>O NAS</b>
+              <hr>
+              O nas</br>
+              Kontakt</br>
+              Centrum pomocy</br>
+              Współpraca</br>
+              </br>
+            </div>
+            <div class="footer_text">
+              <b>TWOJE KONTO</b>
+              <hr>
+              Logowanie</br>
+              Rejestracja</br>
+              Konto</br>
+            </div>
+            <div class="footer_text">
+              <b>WAŻNE</b>
+              <hr>
+              FAQ</br>
+              Regulamin</br>
+              Polityka prywatności</br>
+            </div></br>
+            <div class="footer_copyright">
+            </br>  <p>teledu.pl &copy; Created by Kacper Murat & Peter Paszko <!--<?php echo date("Y"); ?>-->2017. All Rights Reserved<p>
             </div>
           </div>
-          </div>
+        </div>
+        </div>
+
     </div>
   </div>
   </div>

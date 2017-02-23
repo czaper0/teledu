@@ -117,7 +117,6 @@ src: local('Tw Cen MT Condensed Extra Bold'), url('TCCEB.woff') format('woff');
   margin: auto;
   width: 100%;
   text-align: center;
-  padding: 40px;
   background-color: #1D2126;
 }
 
