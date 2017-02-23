@@ -117,7 +117,6 @@ src: local('Tw Cen MT Condensed Extra Bold'), url('TCCEB.woff') format('woff');
   margin: auto;
   width: 100%;
   text-align: center;
-  padding: 40px;
   background-color: #1D2126;
 }
 
@@ -587,6 +586,7 @@ Y88b  d88P Y88b. .d88P 888   d88P
   width: 80%;
   background-color: #201f28;
   display: block;
+  margin-bottom: -350px;
 }
 
 /*
@@ -689,10 +689,7 @@ Y88b  d88P Y88b. .d88P 888   d88P
   color:  #4d4a4a;
   border-color:  #232429;
 }
-.footer_text a:hover;
-{
 
-}
 .footer_copyright
 {
   padding-top: 5px;
