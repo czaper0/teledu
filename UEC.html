@@ -24,7 +24,7 @@
     </script>
 
   </head>
-  <body onload="funkcja1('01'); choose_menu('1')">
+  <body onload="funkcja1('01'); choose_menu('1'); update_content('UEC', '11')">
     <div class="wrapper">
 
 <!--
@@ -38,12 +38,11 @@
 ###       ### ########## ###    ####  ########
 
 -->
-
       <div class="menu">
         <div class="logo_container_subpage">
           <a href="index.php"><img class="logo_subpage" src="img/logo2.png"></a>
         </div>
-        <span id="0" onclick="funkcja1('01'); choose_menu('1')">
+        <span id="0" onclick="funkcja1('01'); choose_menu('1'); update_content('UEC', '11')">
                 <div class="title_rectangle" id="01" style="background-color: #df2f00;">UKŁADY CYFROWE
                 </div>
                   <img id="img_01" class="menu_img"/>
@@ -52,7 +51,7 @@
                 <div id="subrectangle"></div>
         </span>
 
-        <span id="1" onclick="funkcja1(11); choose_menu('1');">
+        <span id="1" onclick="funkcja1(11); choose_menu('1'); update_content('UEC', '2')">
                 <div class="triangle" style="border-bottom: 20px solid #e3b307;"></div>
                 <div class="rectangle" id="11" style="background-color: #e3b307;" tabindex="0">
                   <div class="menu_img_container">
@@ -65,7 +64,7 @@
         </span>
 
 
-        <span id="2"  onclick="funkcja1(21); choose_menu('1')">
+        <span id="2"  onclick="funkcja1(21); choose_menu('1'); update_content('UEC', '3')">
                 <div class="triangle" style="border-bottom: 20px solid #cbe215" ></div>
                 <div class="rectangle" id="21" style="background-color: #cbe215" tabindex="0">
                   <div class="menu_img_container">
@@ -77,7 +76,7 @@
                 <div id="subrectangle"></div>
         </span>
 
-        <span id="3" onclick="funkcja1(31); choose_menu('1')">
+        <span id="3" onclick="funkcja1(31); choose_menu('1'); update_content('UEC', '4')">
                 <div class="triangle" style="border-bottom: 20px solid #399e16"></div>
                 <div class="rectangle" id="31" style="background-color: #399e16" tabindex="0">
                   <div class="menu_img_container">
@@ -89,19 +88,20 @@
                 <div id="subrectangle"></div>
         </span>
 
-        <span id="4" onclick="funkcja1(41); choose_menu('1')">
+        <span id="4" onclick="funkcja1(41); choose_menu('1'); update_content('UEC', '55')">
                 <div class="triangle" style="border-bottom: 20px solid #4474d0"></div>
                 <div class="rectangle" id="41" style="background-color: #4474d0" tabindex="0">
                   <div class="menu_img_container">
                    <img id="img_41" class="menu_img" src="img/UEC_wave.png" />
 
-         <span id="title_41" class="menu_title">UKŁADY SEKWENCYJNE</span>         </div>
+         <span id="title_41" class="menu_title">UKŁADY SEKWENCYJNE</span>
+                   </div>
                 </div>
                 <div id="subtriangle"></div>
                 <div id="subrectangle"></div>
         </span>
 
-        <span id="5" onclick="funkcja1(51); choose_menu('1')">
+        <span id="5" onclick="funkcja1(51); choose_menu('1'); update_content('UEC', '6')">
                 <div class="triangle" style="border-bottom: 20px solid #1c3970;"></div>
                 <div class="rectangle" id="51" style="background-color: #1c3970;" tabindex="0">
                   <div class="menu_img_container">
@@ -247,7 +247,7 @@
 -->
 
 
-        <div class="main_content_wrapper" onclick="update_content('1')">
+        <div class="main_content_wrapper">
             <div id="content_box">
 
             </div>
@@ -319,16 +319,44 @@ Pellentesque eget lectus lorem. Vestibulum ante ipsum primis in faucibus orci lu
 
   <div class="footer-container" style="width: 100%;">
     <div id="footer" class="footer">
-    *jakiś tekst o tym że strona była tworzona z pasją</br>
-    <p3 style="float: right; text-align: left; margin-right: 20px;">
-      @created by Kacper Murat & Piotr Paszko</br>
-      @graphics created by Kacper Murat & Piotr Paszko</br>
-      support:    <u><i>support@teledu.pl</i></u></br>
-      Kacper
+      <div class="footer_text">
+        <b>TELEDU</b>
+        <hr>
+        Strona główna</br>
+        Nowości</br>
+        Newsletter</br>
+        Forum</br>
+      </div>
+      <div class="footer_text">
+        <b>O NAS</b>
+        <hr>
+        O nas</br>
+        Kontakt</br>
+        Centrum pomocy</br>
+        Współpraca</br>
+        </br>
+      </div>
+      <div class="footer_text">
+        <b>TWOJE KONTO</b>
+        <hr>
+        Zaloguj się</br>
+        Zarejestruj się</br>
+        Moje konto</br>
+      </div>
+      <div class="footer_text">
+        <b>WAŻNE SPRAWY</b>
+        <hr>
+        FAQ</br>
+        Regulamin</br>
+        Polityka prywatności</br>
+      </div></br>
+      <div class="footer_copyright">
+      </br>  <p>teledu.pl &copy; Created by Kacper Murat & Peter Paszko <!--<?php echo date("Y"); ?>-->2017. All Rights Reserved<p>
+      </div>
     </div>
-    </p3>
   </div>
   </div>
+
     <script src="myScript.js"></script>
   </body>
 </html>

@@ -39,10 +39,9 @@ function choose_menu(iden)
 
 }
 
-function update_content(ident)
+function update_content(section, ident)
 {
-    $("#content_box").load("content/UEC/" + ident + ".html");
-    //$('#UEC1').load("content/UEC/1.html");
+  $("#content_box").load("content/"+section+"/"+ident+".html");
 }
 
 /*$(document).ready(function() {

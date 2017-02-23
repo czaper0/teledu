@@ -178,23 +178,40 @@
           <div class="footer-container" style="width: 100%;">
             <div id="footer" class="footer">
               <div class="footer_text">
-                aa
+                <b>TELEDU</b>
                 <hr>
+                <a>Strona główna</a></br>
+                <a>Nowości</a></br>
+                <a>Newsletter</a></br>
+                <a>Forum</a></br>
               </div>
               <div class="footer_text">
-                aaa
+                <b>O NAS</b>
+                <hr>
+                O nas</br>
+                Kontakt</br>
+                Centrum pomocy</br>
+                Współpraca</br>
+                </br>
               </div>
               <div class="footer_text">
-                aaaa
+                <b>TWOJE KONTO</b>
+                <hr>
+                Logowanie</br>
+                Rejestracja</br>
+                Konto</br>
               </div>
-            <!--*jakiś tekst o tym że strona była tworzona z pasją</br>
-            <p3 style="float: right; text-align: left; margin-right: 20px;">
-              @created by Kacper Murat & Piotr Paszko</br>
-              @graphics created by Kacper Murat & Piotr Paszko</br>
-              support:    <u><i>support@teledu.pl</i></u></br>
-              Kacper-->
+              <div class="footer_text">
+                <b>WAŻNE SPRAWY</b>
+                <hr>
+                FAQ</br>
+                Regulamin</br>
+                Polityka prywatności</br>
+              </div></br>
+              <div class="footer_copyright">
+                  <p>teledu.pl &copy; Created by Kacper Murat & Peter Paszko <!--<?php echo date("Y"); ?>-->2017. All Rights Reserved<p>
+              </div>
             </div>
-            </p3>
           </div>
           </div>
     </div>

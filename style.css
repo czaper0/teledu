@@ -117,6 +117,7 @@ src: local('Tw Cen MT Condensed Extra Bold'), url('TCCEB.woff') format('woff');
   margin: auto;
   width: 100%;
   text-align: center;
+  padding: 40px;
   background-color: #1D2126;
 }
 
@@ -561,7 +562,7 @@ Y88b  d88P Y88b. .d88P 888   d88P
 ########   ########  ###    ####     ###     ########## ###    ####     ###
 
 */
-.main_content
+#content_box
 {
   margin-left: auto;
   margin-right: auto;
@@ -570,9 +571,8 @@ Y88b  d88P Y88b. .d88P 888   d88P
   background-color: #201f28;
   display: block;
   text-align: justify;
-  color: red;
 }
-.main_content h1,h2
+#content_box h1,h2
 {
   font-family: Tw Cen MT Condensed Extra Bold;
 }
@@ -675,12 +675,36 @@ Y88b  d88P Y88b. .d88P 888   d88P
 }
 .footer_text
 {
-  display: inline-block;
-  width: 25%;
-  height: 300px;
-  background-color:rgba(37, 125, 44, 0.53);
+  text-align: left;
+  margin-right: 30px;
+  margin-left: 30px;
+  display: inline-table;
+  width: 10%;
+  height: 200px;
+  line-height: 150%;
+  //background-color:rgba(37, 125, 44, 0.53);
 }
+.footer_text b, hr
+{
+  color:  #4d4a4a;
+  border-color:  #232429;
+}
+.footer_text a:hover;
+{
 
+}
+.footer_copyright
+{
+  padding-top: 5px;
+  text-align: center;
+  width: 600px;
+  border-top-color: #232429;
+  border-top-style: solid;
+  border-top-width: 0.5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
 /*
 
 8888888b. 8888888 8888888888 8888888888 8888888888 8888888b.  8888888888 888b    888 88888888888
