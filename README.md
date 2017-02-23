@@ -1,1 +1,1 @@
-We learn web development. This is ours firs big (or not hehe) website. We hope that, implementation is not that bad as we think it is.
+We are learning web development. This is ours first big (or not hehe) website. We hope that this implementation is not as bad as we think it is.
