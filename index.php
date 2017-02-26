@@ -20,6 +20,16 @@
 
   </head>
   <body>
+
+    <div id="loader_window">
+        <div id="loader_container">
+            <div class="loader_ani" id="a"></div>
+            <div class="loader_ani" id="b"></div>
+            <div class="loader_ani" id="c"></div>
+            <div class="loader_ani" id="d"></div>
+        </div>
+    </div>
+
     <div class="wrapper">
       <div class="logo_container">
           <img class="logo" src="img/logo2.png">
@@ -166,33 +176,33 @@
             <div class="footer_text">
               <b>TELEDU</b>
               <hr>
-              Strona główna</br>
-              Nowości</br>
-              Newsletter</br>
-              Forum</br>
+              <a>Strona główna</a></br>
+              <a>Nowości</a></br>
+              <a>Newsletter</a></br>
+              <a>Forum</a></br>
             </div>
             <div class="footer_text">
               <b>O NAS</b>
               <hr>
-              O nas</br>
-              Kontakt</br>
-              Centrum pomocy</br>
-              Współpraca</br>
+              <a>O nas</a></br>
+              <a>Kontakt</a></br>
+              <a>Centrum pomocy</a></br>
+              <a>Współpraca</a></br>
               </br>
             </div>
             <div class="footer_text">
               <b>TWOJE KONTO</b>
               <hr>
-              Logowanie</br>
-              Rejestracja</br>
-              Konto</br>
+              <a>Logowanie</a></br>
+              <a>Rejestracja</a></br>
+              <a>Konto</a></br>
             </div>
             <div class="footer_text">
               <b>WAŻNE</b>
               <hr>
-              FAQ</br>
-              Regulamin</br>
-              Polityka prywatności</br>
+              <a>FAQ</a></br>
+              <a>Regulamin</a></br>
+              <a>Polityka prywatności</a></br>
             </div></br>
             <div class="footer_copyright">
             </br>  <p>teledu.pl &copy; Created by Kacper Murat & Peter Paszko <!--<?php echo date("Y"); ?>-->2017. All Rights Reserved<p>
